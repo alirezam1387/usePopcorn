@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    overflow-y: hidden;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    background-color: #212529;
+}
+
+p {
+    margin: 0;
+}
+
+/* header */
+.header {
+    background-color: #6741D9;
+    border-radius: 12px;
+    width: 100%;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.header .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header input {
+    width: 400px;
+    padding: 13px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background-color: #7950F2;
+}
+
+.header input::placeholder {
+    color: #ADB5BD;
+}
+
+/* body */
+.movie-box {
+    width: 900px;
+    margin: 40px auto;
+    color: white;
+    max-height: calc(-11rem + 100vh);
+}
+
+.movie-list {
+    position: relative;
+    background-color: #2B3035;
+    border-radius: 10px;
+    height: calc(-11rem + 100vh);
+    overflow-y: auto;
+}
+
+.movie-list>svg {
+    position: fixed;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.movie {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+    border-bottom: 1px solid #adb5bd23;
+}
+
+.movie:hover {
+    background-color: #343A40;
+}
+
+.movie .date {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.movie .detail {
+    position: relative;
+    width: 100%;
+}
+
+.movie .detail>p {
+    margin-bottom: 5px;
+}
+
+.movie img {
+    width: 40px;
+    height: 60px;
+}
+
+.movie.deactive {
+    cursor: auto;
+}
+
+.movie.deactive {
+    background-color: #2B3035;
+}
+
+.pin-box {
+    background-color: #343A40;
+    border-radius: 10px;
+    padding: 20px 35px;
+    margin-bottom: 10px;
+}
+
+.pin-box.active {
+    box-shadow: 0px 10px 43px -7px rgba(0,0,0,0.75);
+}
+
+.pin-box > p {
+    margin-bottom: 9px;
+}
+
+.pin-box .sectionItem {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    align-items:  center;
+    justify-content: space-between;
+    gap: 9px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.detail .items .sectionItem {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.sectionItem-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: red;
+}
+
+/* movie detail box */
+
+.movie-detail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #343A40;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.movie-detail > img {
+    width: 133px;
+    height: 200px;
+    border-top-left-radius: 10px;
+}
+
+.movie-detail .detail h5 {
+    margin-bottom: 45px;
+}
+
+.movie-detail .star {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.star-icon {
+    color: yellow;
+}
+
+.movie-list > .detail {
+    padding: 25px;
+}
+
+.stars-box {
+    background-color: #343A40;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 1.3rem;
+    margin: auto;
+}
+
+.star-svg {
+    color: yellow;
+    padding: 0 3px;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.more-detail {
+    margin-top: 20px;
+}
+
+.more-detail > p {
+    text-indent: 15px;
+    font-style: italic;
+    font-size: .9rem;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: #6741D9;
+}
+
+.btn:hover {
+    background-color: #7850F1;
+}
