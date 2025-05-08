@@ -16,7 +16,6 @@ import { Helmet } from "react-helmet";
 function App() {
     return (
         <>
-        hello world
             <Helmet>
                 <title>usepopcorn</title>
                 <meta name="description" content="a website for choose your movie watchlist" />
